@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= yield(:title)%> | lab. SaaS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+<!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">  
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark font nav">
+    <div class="container-fluid">
+        <span class="navbar-toggler-icon"></span>
+        <a class="navbar-brand" href="/index">
+            <img class ="img-responsive" src="/images/logo.svg" alt="" width="100" height="100" class="d-inline-block align-text-top">
+            Fashion-Style
+          </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/tienda">Tienda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/ofertas"> Ofertas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/designers">Diseñadores</a>
+          </li>
+         
+          <li class="nav-item">
+            <a class="nav-link" href="/carrito">Carrito</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about-us">About us</a>
+          </li>
+        
+        <li class="nav-item">
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+         </li>
+        </ul>
+         <!-- Example single danger button -->
+<div class="btn-group">
+  <a><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/1024px-User_icon_2.svg.png" alt="" width="40" height="40"></a>
+  <button type="button" class="btn btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#">Separated link</a></li>
+  </ul>
+</div>
+        
+      </div>
+    </div>
+  </nav>
+
+  <body >
+  <div class="dsc-skeleton-content">
+    <%= yield %>
+  
+  </div>
+  </body>
+  <footer>
+  <div class="w-100 dg-footer">
+    <p>Lanzado por REJOS-Style | Todos los derechos reservados</p>
+</div>
+  </footer>
+</html>

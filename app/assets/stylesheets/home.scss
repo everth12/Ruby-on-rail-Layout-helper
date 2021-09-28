@@ -1,0 +1,30 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+html, body{
+    margin: 0px;
+}
+.nav{
+    font-family: 'Bonheur Royale', cursive;
+font-family: 'Source Code Pro', monospace;
+    
+}
+
+.dsc-skeleton-content {
+    min-height: calc(100vh - 80px - 60px);
+    //background: rgb(0,0,0,0.05);
+}
+
+.dg-footer{
+    height: 60px;
+    width: 100%;
+    padding: 0.5rem 1rem ;
+    background-color: whitesmoke;
+    text-align: center;
+    color: rgba(0,0,0,0.7);
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
